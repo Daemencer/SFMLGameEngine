@@ -9,7 +9,7 @@ namespace engine {
 class Device final
 {
 public:
-	Device() = default;
+	Device();
 	Device(const Device&) = default;
 	auto	operator = (const Device&) -> Device& = default;
 	~Device() = default;
@@ -23,7 +23,7 @@ public:
 	auto	getWindow() const -> sf::RenderWindow { return _win; }
 
 private:
-	sf::RenderWindow	_win;
+	sf::RenderWindow*	_win;
 
 };
 
