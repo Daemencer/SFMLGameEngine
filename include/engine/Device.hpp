@@ -25,6 +25,8 @@ public:
 private:
 	sf::RenderWindow*	_win;
 
+	bool				_running = true;
+
 };
 
 
